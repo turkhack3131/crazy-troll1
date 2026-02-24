@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Crazy Troll Local",
+  "version": "1.0",
+  "permissions": ["tabs", "webNavigation"],
+  "host_permissions": [
+    "*://*.crazygames.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": ["troll.html", "video.mp4"],
+    "matches": ["<all_urls>"]
+  }]
+}
